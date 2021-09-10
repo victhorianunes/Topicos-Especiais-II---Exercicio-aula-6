@@ -1,0 +1,8 @@
+<h2> Temporizador </h2>
+
+<p> {{timer.getCount()}}s</p>
+
+<div>
+  <button (click)="this.timer.start(1000)">start</button>
+  <button (click)="this.timer.stop()">stop</button>
+</div>

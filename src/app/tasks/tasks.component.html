@@ -1,0 +1,14 @@
+<h2>Disciplinas</h2>
+<div>
+  <input #input type= "text"/>
+  <button (click)="tasks.add(input.value); input.value='';">+</button>
+</div>
+<ul>
+  <li *ngFor= "let disciplina of tasks.getList(), index as i">
+    {{disciplina.title}}
+    <span (click)="tasks.remove(i)" style="cursor: pointer">
+    [remover]
+    </span>  
+  </li>
+  
+</ul>
